@@ -1,25 +1,42 @@
 <template>
-<header>
-<!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
-<nav>
-  <div class="light-blue darken-3 nav-wrapper">
-    <button class="btn" @click.prevent="OpenCloseMenuClick" >menu</button>
-    <a href="#!" class="brand-logo">Logo</a>
-    <ul class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <!-- Dropdown Trigger -->
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" ref="dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-    </ul>
-  </div>
-</nav>
-</header>
+  <nav class="navbar light-blue">
+    <div class="nav-wrapper">
+      <div class="navbar-left">
+        <a href="#" @click.prevent="$emit('OpenCloseMenuClick')">
+          <i class="material-icons white-text">format_list_bulleted</i>
+        </a>
+        <span class="white-text">12.12.12</span>
+      </div>
+
+      <ul class="right hide-on-small-and-down">
+        <li>
+          <a
+              class="dropdown-trigger white-text"
+              href="#"
+              data-target="dropdown"
+              ref="dropdown"
+          >
+            USER NAME
+            <i class="material-icons right">arrow_drop_down</i>
+          </a>
+
+          <ul id='dropdown' class='dropdown-content'>
+            <li>
+              <router-link to="/profile" class="black-text">
+                <i class="material-icons">account_circle</i>Профиль
+              </router-link>
+            </li>
+            <li class="divider" tabindex="-1"></li>
+            <li>
+              <a href="#" class="black-text">
+                <i class="material-icons">assignment_return</i>Выйти
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 

@@ -21,7 +21,6 @@ Vue.use(VueRouter)
     },
     component: () => import('@/views/Login.vue')
   },
-
   {
     path: '/register',
     name: 'Register',
@@ -29,7 +28,55 @@ Vue.use(VueRouter)
       layout: 'empty'
     },
     component: () => import('@/views/Register.vue')
-  }
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/Profile.vue')
+  },
+  {
+    path: '/recordbook',
+    name: 'Recordbook',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/Recordbook.vue')
+  },
+  {
+    path: '/personal',
+    name: 'Personal',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/Personal.vue')
+  },
+  {
+    path: '/iyp',
+    name: 'Iyp',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/iyp.vue')
+  },
+  {
+    path: '/pay',
+    name: 'Pay',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/Pay.vue')
+  },
+  {
+    path: '/obhodnoy',
+    name: 'Obhodnoy',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/Obhodnoy.vue')
+  },
   
 ]
 
