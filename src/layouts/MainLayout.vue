@@ -6,7 +6,9 @@
   </header>
   <main class="app-content" :class="{full: !isOpen}">
       <div class="app-page">
-        <router-view />
+        <div class="container">
+          <router-view />
+        </div>
       </div>
     </main>
 

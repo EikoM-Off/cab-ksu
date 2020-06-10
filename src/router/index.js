@@ -77,6 +77,14 @@ Vue.use(VueRouter)
     },
     component: () => import('@/views/Obhodnoy.vue')
   },
+  {
+    path: '/adviserprofile',
+    name: 'AdviserProfile',
+    meta: {
+      layout: 'main'
+    },
+    component: () => import('@/views/AdviserProfile.vue')
+  },
   
 ]
 

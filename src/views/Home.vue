@@ -1,8 +1,8 @@
 <template>
   <div>
       <div class="row">
-        <div class="col s12 m6">
-          <div class="card hoverable blue-grey darken-1" @dblclick="hide_element">
+        <div class="col s12">
+          <div class="card hoverable blue-grey darken-1 pointer" @dblclick="hide_element">
             <div class="card-content white-text">
             <span class="card-title">Внимание!</span>
             <p>
@@ -14,7 +14,7 @@
             </div> -->
         </div>
         
-        <div class="card hoverable blue-grey darken-1" @dblclick="hide_element">
+        <div class="card hoverable blue-grey darken-1 pointer" @dblclick="hide_element">
           <div class="card-content white-text">
             <span class="card-title">Уважаемые студенты!</span>
             <p>
@@ -31,7 +31,7 @@
     <div>
       <ul class="collection with-header">
         <li class="collection-header"><h4>Информационные материалы</h4></li>
-        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Эдвайзер<router-link to="/adviserprofile" class="secondary-content"><i class="material-icons">send</i></router-link></div></li>
         <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
         <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
         <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>

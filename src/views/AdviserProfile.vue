@@ -1,0 +1,46 @@
+<template>
+  <div>
+    <div class="page-title">
+      <h3>Эдвайзер</h3>
+    </div>
+
+  <ul class="collection">
+      <li class="collection-item">Ф.И.О. эдвайзера: {{getadviser_personal_data[0].surname}} {{getadviser_personal_data[0].name}} {{getadviser_personal_data[0].middname}}</li>
+      <li class="collection-item">Должность: {{getadviser_personal_data[0].position}} </li>
+      <li class="collection-item">Факультет: {{getadviser_personal_data[0].faculty}}</li>
+      <li class="collection-item">Кафедра: {{getadviser_personal_data[0].department}}</li>
+      <li class="collection-item">Телефон: {{getadviser_personal_data[0].phone}}</li>
+      <li class="collection-item">Тел.мобильный: {{getadviser_personal_data[0].mobile_phone}}</li>
+      <li class="collection-item">Адрес электронной почты: {{getadviser_personal_data[0].email}}</li>
+    </ul>
+
+    <table class="striped">
+        <thead>
+          <tr>
+              <th>Факультет</th>
+              <th>Курс</th>
+              <th>Номер группы</th>
+              <th>Шифр - Специальность</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr v-for="group in get_adviser_groups_data" :key="group.id">
+            <td>{{group.faculty}}</td>
+            <td>{{group.course}}</td>
+            <td>{{group.study_group}}</td>
+            <td>{{group.specialty}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+  </div>
+</template>
+
+
+<script>
+import {mapGetters} from "vuex"
+export default {
+ computed: mapGetters(["getadviser_personal_data", "get_adviser_groups_data"])
+}
+</script>
