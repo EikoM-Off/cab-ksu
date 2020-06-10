@@ -9,7 +9,7 @@
       :to="link.url"
       :exact="link.exact"
     >
-      <a href="#" class="waves-effect waves-light pointer">{{link.title}}<i class="material-icons orange-text darken-3">{{link.ico}}</i></a>
+      <a href="#" class="waves-effect waves-light pointer">{{link.title}}<i class="material-icons blue-grey-text lighten-2">{{link.ico}}</i></a>
     </router-link>
   </ul>
 </template>

@@ -1,14 +1,14 @@
 <template>
-  <nav class="navbar light-blue">
+  <nav class="navbar blue-grey darken-4">
     <div class="nav-wrapper">
       <div class="navbar-left">
         <a href="#" @click.prevent="$emit('OpenCloseMenuClick')">
           <i class="material-icons white-text">format_list_bulleted</i>
         </a>
-        <span class="white-text">12.12.12</span>
+        <span class="white-text hide-on-small-and-down">Личный кабинет КГУ им. А.Байтурсынова</span>
       </div>
 
-      <ul class="right hide-on-small-and-down">
+      <ul class="right">
         <li>
           <a
               class="dropdown-trigger white-text"
@@ -16,7 +16,7 @@
               data-target="dropdown"
               ref="dropdown"
           >
-            USER NAME
+            {{personalData[0].name}} {{personalData[0].surname}}
             <i class="material-icons right">arrow_drop_down</i>
           </a>
 
@@ -43,6 +43,11 @@
 <script>
 import M from 'materialize-css'
 export default {
+  computed: {
+    personalData() {     
+      return this.$store.getters.getPersData;    
+    }
+  } ,
     mounted() { 
         M.Dropdown.init(this.$refs.dropdown, {
           coverTrigger: false
