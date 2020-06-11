@@ -3,7 +3,12 @@
     <div class="page-title">
       <h3>Эдвайзер</h3>
     </div>
+<div class="row">
+  <div class="col s12 m6 l6 xl3">
+     <img src="https://i.pinimg.com/736x/d6/5d/50/d65d503aaf75524213da7db5c6d6f173.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+   </div>
 
+  <div class="col s12 m6 l6 xl9 right">
   <ul class="collection">
       <li class="collection-item">Ф.И.О. эдвайзера: {{getadviser_personal_data[0].surname}} {{getadviser_personal_data[0].name}} {{getadviser_personal_data[0].middname}}</li>
       <li class="collection-item">Должность: {{getadviser_personal_data[0].position}} </li>
@@ -13,7 +18,8 @@
       <li class="collection-item">Тел.мобильный: {{getadviser_personal_data[0].mobile_phone}}</li>
       <li class="collection-item">Адрес электронной почты: {{getadviser_personal_data[0].email}}</li>
     </ul>
-
+  </div>
+</div>
     <table class="striped">
         <thead>
           <tr>

@@ -32,9 +32,9 @@
       <ul class="collection with-header">
         <li class="collection-header"><h4>Информационные материалы</h4></li>
         <li class="collection-item"><div>Эдвайзер<router-link to="/adviserprofile" class="secondary-content"><i class="material-icons">send</i></router-link></div></li>
-        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
-        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Учебный план<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Заказ справки, транскрипта<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Академический календарь<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
       </ul>
     </div>
 
