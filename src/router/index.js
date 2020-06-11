@@ -85,14 +85,6 @@ Vue.use(VueRouter)
     },
     component: () => import('@/views/AdviserProfile.vue')
   },
-  {
-    path: '/passchange',
-    name: 'PasswordChange',
-    meta: {
-      layout: 'empty'
-    },
-    component: () => import('@/views/PasswordChange.vue')
-  },
   
 ]
 

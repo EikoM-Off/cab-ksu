@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>Профиль</h3>
-      <button data-target="modal_chng_pass" class="btn modal-trigger">Сменить пароль</button>
+      <h3 class="hide-on-small-and-down">Профиль</h3>
+      <button data-target="modal_chng_pass" class="btn modal-trigger right">Сменить пароль</button>
     </div>
  <div class="row">
    <div class="col s12 m6 l6 xl3">
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import PasswordChange from '@/views/PasswordChange.vue'
+import PasswordChange from '@/components/PasswordChange.vue'
 export default {
   computed: {
     personalData() {     
