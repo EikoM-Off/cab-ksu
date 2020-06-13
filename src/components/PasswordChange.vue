@@ -5,13 +5,13 @@
       <div class="row">
         <form class="col s12">
             <div class="row">
-                <div class="col s12 m6">
+                <div class="col s12 m12">
                 <div class="input-field">
                     <input v-model="password1" @change="validate" id="password1" type="password" class="validate">
                     <label class="active" for="password1">Новый пароль</label>
                 </div>
                 </div>
-                <div class="col s12 m6">
+                <div class="col s12 m12">
                 <div class="input-field">
                     <input v-model="password2" @change="validate" id="password2" type="password" class="validate">
                     <label for="password2">Повторите пароль</label>
