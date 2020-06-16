@@ -10,13 +10,13 @@
 
   <div class="col s12 m6 l6 xl9 right">
   <ul class="collection">
-      <li class="collection-item">Ф.И.О. эдвайзера: {{getadviser_personal_data[0].surname}} {{getadviser_personal_data[0].name}} {{getadviser_personal_data[0].middname}}</li>
-      <li class="collection-item">Должность: {{getadviser_personal_data[0].position}} </li>
-      <li class="collection-item">Факультет: {{getadviser_personal_data[0].faculty}}</li>
-      <li class="collection-item">Кафедра: {{getadviser_personal_data[0].department}}</li>
-      <li class="collection-item">Телефон: {{getadviser_personal_data[0].phone}}</li>
-      <li class="collection-item">Тел.мобильный: {{getadviser_personal_data[0].mobile_phone}}</li>
-      <li class="collection-item">Адрес электронной почты: {{getadviser_personal_data[0].email}}</li>
+      <li class="collection-item"><b>Ф.И.О. эдвайзера:</b>  {{getadviser_personal_data[0].surname}} {{getadviser_personal_data[0].name}} {{getadviser_personal_data[0].middname}}</li>
+      <li class="collection-item"><b>Должность:</b>  {{getadviser_personal_data[0].position}} </li>
+      <li class="collection-item"><b>Факультет:</b>  {{getadviser_personal_data[0].faculty}}</li>
+      <li class="collection-item"><b>Кафедра:</b>  {{getadviser_personal_data[0].department}}</li>
+      <li class="collection-item"><b>Телефон:</b>  {{getadviser_personal_data[0].phone}}</li>
+      <li class="collection-item"><b>Тел.мобильный:</b>  {{getadviser_personal_data[0].mobile_phone}}</li>
+      <li class="collection-item"><b>Адрес электронной почты:</b>  {{getadviser_personal_data[0].email}}</li>
     </ul>
   </div>
 </div>

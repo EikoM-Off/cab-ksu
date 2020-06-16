@@ -15,12 +15,12 @@
                 <div class="input-field">
                     <input v-model="password2" @change="validate" id="password2" type="password" class="validate">
                     <label for="password2">Повторите пароль</label>
-                    <span v-if="showerror" class="helper-text">Пароли не совпадают</span>
+                    <span v-if="showerror" class="helper-text">{{validate}}</span>
                 </div>
                 </div>
             </div>
 
-            <router-link to="/profile" @click="clear_inp" class="modal-close btn-flat right">Отмена</router-link>
+            <button @click="clear_inp" class="modal-close btn-flat right">Отмена</button>
             <button class="btn right" type="submit" v-if="!showerror && !emptyfield">Сменить</button>
             <button class="btn right" disabled type="submit" v-else>Сменить</button>
 
@@ -41,13 +41,8 @@ export default {
         emptyfield: true
     }),
     methods:{
-        validate: function(){
-            if(this.password1 === this.password2){
-                this.showerror = false
-                this.validate_empty()
-            }else {
-                this.showerror = true
-            }
+        changeshowerror: function(el){
+            this.showerror = el
         },
         validate_empty: function(){
             if(this.password1 && this.password2){
@@ -57,10 +52,21 @@ export default {
             }
         },
         clear_inp: function(){
-            console.log("cleared")
             this.password1 = ''
             this.password2 = ''
         }
+    },
+    computed:{
+        validate: function(){
+            if(this.password1 === this.password2){
+                this.validate_empty()
+                this.changeshowerror(false)
+                return ""
+            }else {
+                this.changeshowerror(true)
+                return "Пароли не совпадают"
+            }
+        },
     },
   mounted() { 
         M.Modal.init(this.$refs.modal)

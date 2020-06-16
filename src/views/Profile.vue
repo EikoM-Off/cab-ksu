@@ -12,12 +12,13 @@
     <div class="col s12 m6 l6 xl9 right">
       <ul class="collection with-header">
             <li class="collection-header"><h4>Личные данные</h4></li>
-              <li class="collection-item">Имя: {{personalData[0].name}}</li>
-              <li class="collection-item">Фамилия: {{personalData[0].surname}}</li>
-              <li class="collection-item">Отчество: {{personalData[0].middname}}</li>
-              <li class="collection-item">Возраст: {{personalData[0].age}}</li>
+              <li class="collection-item"><b>Имя:</b> {{personalData[0].name}}</li>
+              <li class="collection-item"><b>Фамилия:</b>  {{personalData[0].surname}}</li>
+              <li class="collection-item"><b>Отчество:</b>  {{personalData[0].middname}}</li>
+              <li class="collection-item"><b>Возраст:</b>  {{personalData[0].age}}</li>
         </ul>
     </div>
+
     <!-- <div class="col s12">
         <ul class="collection with-header">
         <li class="collection-header"><h4>Аккаунт</h4></li>
