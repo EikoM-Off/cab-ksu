@@ -1,6 +1,6 @@
 <template>
     <div class="collection">
-        <h4 class="center-align">Информационные материалы</h4>
+        <h5 class="center-align">Информационные материалы</h5>
         <router-link
         class="collection-item black-text darken-4"
         v-for="link in links"

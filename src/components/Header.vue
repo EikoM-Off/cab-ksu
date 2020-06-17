@@ -5,7 +5,7 @@
         <a href="#" @click.prevent="$emit('OpenCloseMenuClick')">
           <i class="material-icons white-text">format_list_bulleted</i>
         </a>
-        <span class="white-text hide-on-small-and-down">Личный кабинет КГУ им. А.Байтурсынова</span>
+        <span class="white-text hide-on-small-and-down">Личный кабинет учащегося КГУ им. А.Байтурсынова</span>
       </div>
 
       <ul class="right">
@@ -28,9 +28,9 @@
             </li>
             <li class="divider" tabindex="-1"></li>
             <li>
-              <a href="#" class="black-text">
+              <router-link to="/login" class="black-text">
                 <i class="material-icons">assignment_return</i>Выйти
-              </a>
+              </router-link>
             </li>
           </ul>
         </li>

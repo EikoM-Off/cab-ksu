@@ -1,7 +1,5 @@
 <template>
-        <router-view />
+  <div class="blue lighten-4 empty-layout">
+    <router-view />
+  </div>
 </template>
-
-<style>
-
-</style>
