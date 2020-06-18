@@ -1,6 +1,6 @@
 <template>
   <div>
-    <table class="centered striped responsive-table">
+    <table class="centered striped">
         <thead>
           <tr>
               <th>N</th>

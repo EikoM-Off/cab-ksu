@@ -1,5 +1,5 @@
 <template>
-    <footer class="page-footer light-blue darken-3">
+    <footer class="page-footer blue-grey">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -19,9 +19,17 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2020 Author Yaroslav Manakov
+            © {{year.getFullYear()}} Author: <a class="white-text" href="https://vk.com/superbadofficial" target="_blank">Yaroslav Manakov</a>
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
     </footer>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    year: new Date()
+  }),
+}
+</script>

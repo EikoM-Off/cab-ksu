@@ -12,14 +12,14 @@
       </div>
     </main>
 
-<!--     <Footer /> -->
+     <Footer />
 </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
 import Sidebar from '@/components/Sidebar.vue'
-//import Footer from '@/components/Footer.vue'
+import Footer from '@/components/Footer.vue'
 export default {
 
   name: 'main-layout',
@@ -27,8 +27,7 @@ export default {
     isOpen: false
   }),
   components: {
-    Header, Sidebar
-    //, Footer
+    Header, Sidebar, Footer
   }
 }
 </script>

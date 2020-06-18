@@ -6,6 +6,7 @@ export default{
   state: {
       semesters:
       [
+        
         {
             id: 0,
             name: "Шетел тілі (Иностранный язык)",

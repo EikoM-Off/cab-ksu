@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <component :is='layout'>
+    <component class="maindiv" :is='layout'>
     <router-view/>
     </component>
   </div>
@@ -27,6 +27,6 @@ export default {
 <style lang="scss">
 @import '~materialize-css/dist/css/materialize.min.css';
 @import 'assets/css/index.css';
-//@import 'assets/css/helper.css';
+@import 'assets/css/helper.css';
 
 </style>
